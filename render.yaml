@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: fastapi-langchain-app  # Nombre único para tu servicio en Render
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"  # Comando para instalar las dependencias
+    startCommand: "./start.sh"  # Comando para iniciar tu aplicación
